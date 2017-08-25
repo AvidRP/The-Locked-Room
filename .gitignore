@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+
+# Generated Files 
+
+*/Build
+*/Binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
+TheLockedRoom/Content/StarterContent
+
+*.VC.db
+*.suo
+*.VC.opendb
+*.sln
