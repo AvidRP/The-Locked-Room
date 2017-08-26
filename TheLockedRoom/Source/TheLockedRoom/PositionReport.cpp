@@ -24,9 +24,10 @@ void UPositionReport::BeginPlay()
 	Super::BeginPlay();
 
 	//GetOwner method returns a pointer 
+	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
 	FString ObjectName = GetOwner()->GetName();
 	//* acts like a dereference here 
-	UE_LOG(LogTemp, Warning, TEXT("Position report reporting on %s \n"),  *ObjectName);
+	UE_LOG(LogTemp, Warning, TEXT("The object %s is at position %s \n"),  *ObjectName, *ObjectPos);
 	
 }
 
